@@ -1,11 +1,14 @@
 {
-  "type": "sqlite",
- "database": "src/database/db.sqlite",
   "synchronize": true,
   "logging": false,
+  "type": "postgres",
+  "host": "localhost",
+  "port": 4000,
+  "username": "postgres",
+  "password": "123",
+  "database": "postgres",
   "entities": ["dist/**/*.entity{ .ts,.js}"],
-  "migrations": ["dist/database/migrations/**/*.js"]
-
+  "migrations": ["dist/**/*.migrations{ .ts,.js}"]
 }
 
 

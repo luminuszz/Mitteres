@@ -1,27 +1,33 @@
-import {Entity,PrimaryColumn,Column,ManyToOne,BaseEntity,JoinColumn} from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  ManyToOne,
+  BaseEntity,
+  JoinColumn,
+} from 'typeorm';
 
-import User from '../users/user.entity'
+import User from '../users/user.entity';
 
 @Entity()
 export default class Post extends BaseEntity {
-  @PrimaryColumn({ type: 'int' })
+  @PrimaryGeneratedColumn()
   id: number;
 
-  @Column({name:'user_id'})
-  userId: number
+  @Column({ name: 'user_id' })
+  userId: number;
 
-  @Column({ type: 'varchar' })
+  @Column({ length: 150 })
   title: string;
 
-  @Column({ type: 'varchar' })
+  @Column({ length: 500 })
   description: string;
 
   @ManyToOne(
     () => User,
-    user => user.postConnetion,
-    { primary: true,cascade:true },
+    user => user.postConnection,
+    { primary: true },
   )
   @JoinColumn({ name: 'user_id' })
   userConnection: Promise<User>;
 }
-

@@ -1,12 +1,19 @@
-import * as bcrypt from 'bcrypt'
-import * as crypto from 'crypto'
-import { Entity, PrimaryColumn, Column, OneToMany, BaseEntity, BeforeInsert, } from 'typeorm';
+import * as bcrypt from 'bcrypt';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  OneToMany,
+  BaseEntity,
+  BeforeInsert,
+  JoinColumn,
+} from 'typeorm';
 
-import Post from '../posts/post.entity'
+import Post from '../posts/post.entity';
 @Entity()
 export default class User extends BaseEntity {
-  @PrimaryColumn({ type: 'int' })
-  id: string;
+  @PrimaryGeneratedColumn({ type: 'int' })
+  id: number;
 
   @Column({ name: 'frist_name' })
   fristName: string;
@@ -21,11 +28,8 @@ export default class User extends BaseEntity {
   private async inserthash(): Promise<string> {
     return (this.passwordHash = await bcrypt.hash(this.passwordHash, 8));
   }
-  
 
-  @OneToMany(
-    () => Post,
-    post => post.userConnection,
-  )
-  postConnetion: Promise<Post[]>;
+    @OneToMany(()=> Post, post => post.userConnection)
+    postConnection: Promise<Post[]>
+  
 }
