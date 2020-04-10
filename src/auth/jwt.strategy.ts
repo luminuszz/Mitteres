@@ -8,7 +8,7 @@ interface PayloadDto {
   userName: string;
   sub: string;
 }
-
+@Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
   constructor() {
     super({
@@ -21,7 +21,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
   public async validate(payload: PayloadDto): Promise<any> {
     return {
       userId: payload.sub,
-      userName:payload.userName
+      userName: payload.userName,
     };
   }
 }
