@@ -55,13 +55,6 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
-User typeormCli for run migrations
-
-```bash
-typeorm migration:run
-
-```
-
 
 ## Test
 
@@ -75,6 +68,14 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+Use typeormCli for run migrations
+
+```bash
+typeorm migration:run
+
+```
+
 
 ![image](https://user-images.githubusercontent.com/48535259/79010553-9831b180-7b38-11ea-8c23-1baaebf2c56d.png)
 
