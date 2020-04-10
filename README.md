@@ -65,14 +65,11 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-![image](https://user-images.githubusercontent.com/48535259/79010217-e3979000-7b37-11ea-8795-e791c0c37be7.png)
+![image](https://user-images.githubusercontent.com/48535259/79010553-9831b180-7b38-11ea-8c23-1baaebf2c56d.png)
 
+![image](https://user-images.githubusercontent.com/48535259/79010566-a1228300-7b38-11ea-98c3-3cc54966d540.png)
 
-![image](https://user-images.githubusercontent.com/48535259/79010245-f6aa6000-7b37-11ea-86df-02256085c99a.png)
-
-
-![image](https://user-images.githubusercontent.com/48535259/79010484-71737b00-7b38-11ea-97e8-94016751ba40.png)
-
+![image](https://user-images.githubusercontent.com/48535259/79010599-af709f00-7b38-11ea-8e09-3ad68d15930f.png)
 
 
 
