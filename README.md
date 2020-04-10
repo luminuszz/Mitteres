@@ -55,7 +55,7 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
->> User typeormCli for run migrations
+User typeormCli for run migrations
 
 ```bash
 typeorm migration:run
