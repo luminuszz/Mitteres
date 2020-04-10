@@ -28,12 +28,16 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-this project aimed to fix my knowledge acquired with nestjs,
+<p> this project aimed to fix my knowledge acquired with nestjs. </p>
 
 this my github [luminuszz](https://github.com/luminuszz)
 
+## Features
+This project use Nestjs for backend , [typeORM](https://github.com/typeorm/typeorm) for Orm and Sqlite3 
+
 
 ## Installation
+
 
 ```bash
 $ npm install
@@ -51,6 +55,13 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+>> User typeormCli for run migrations
+
+```bash
+typeorm migration:run
+
+```
+
 
 ## Test
 
