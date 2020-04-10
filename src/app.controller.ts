@@ -7,6 +7,9 @@ import {LocalAuthGuard} from './auth/local-auth.guard'
 export class AppController {
   constructor(private authService: AuthService) {}
   @Get()
+  async hello(){
+    return 'HELLO'
+  }
   @UseGuards(LocalAuthGuard)
   @Post('auth/login')
   public async login(@Request() req) {
