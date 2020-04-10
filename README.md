@@ -28,7 +28,9 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-this project aimed to fix my knowledge acquired with nestjs, 
+this project aimed to fix my knowledge acquired with nestjs,
+
+this my github [luminuszz](https://github.com/luminuszz)
 
 
 ## Installation
@@ -62,6 +64,17 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+![image](https://user-images.githubusercontent.com/48535259/79010217-e3979000-7b37-11ea-8795-e791c0c37be7.png)
+
+
+![image](https://user-images.githubusercontent.com/48535259/79010245-f6aa6000-7b37-11ea-86df-02256085c99a.png)
+
+
+![image](https://user-images.githubusercontent.com/48535259/79010484-71737b00-7b38-11ea-97e8-94016751ba40.png)
+
+
+
 
 ## Support
 
