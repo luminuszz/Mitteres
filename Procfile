@@ -1,2 +1,2 @@
-web:start:prod
+web:yarn start:prod
 web:typeorm schema:sync
