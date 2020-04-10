@@ -1,6 +1,6 @@
 {
   "type": "sqlite",
- "database": "src/database/banco.sqlite",
+ "database": "src/database/db.sqlite",
   "synchronize": true,
   "logging": false,
   "entities": ["dist/**/*.entity{ .ts,.js}"],

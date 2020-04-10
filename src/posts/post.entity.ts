@@ -19,7 +19,7 @@ export default class Post extends BaseEntity {
   @ManyToOne(
     () => User,
     user => user.postConnetion,
-    { primary: true },
+    { primary: true,cascade:true },
   )
   @JoinColumn({ name: 'user_id' })
   userConnection: Promise<User>;
