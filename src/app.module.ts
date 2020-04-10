@@ -4,6 +4,7 @@ import { Connection } from 'typeorm';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { AuthModule } from './auth/auth.module';
 import { PostsController } from './posts/posts.controller';
 import { PostsModule } from './posts/posts.module';
 import {PostsService} from './posts/posts.service';
@@ -16,6 +17,7 @@ import {UsersService} from './users/users.service'
     TypeOrmModule.forRoot(),
     UsersModule,
     PostsModule,
+    AuthModule,
   ],
 
   controllers: [AppController, UsersController, PostsController],

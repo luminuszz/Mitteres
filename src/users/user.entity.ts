@@ -21,6 +21,8 @@ export default class User extends BaseEntity {
   private async inserthash(): Promise<string> {
     return (this.passwordHash = await bcrypt.hash(this.passwordHash, 8));
   }
+  
+
   @OneToMany(
     () => Post,
     post => post.userConnection,
